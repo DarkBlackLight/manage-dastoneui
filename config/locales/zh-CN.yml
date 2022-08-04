@@ -1,0 +1,46 @@
+zh-CN:
+  manage:
+    resources:
+      dict_default_message: '拖动文件至此或者点击上传'
+    sessions:
+      new:
+        login: '登录'
+        register: '注册'
+        submit: '提交'
+        sign_in_to_your_account: '登录到您的账户'
+        setup_password: '初始化登录密码'
+        password: '登录密码'
+        password_confirmation: '确认密码'
+        enter_email: '输入邮箱'
+        enter_username: '输入用户名'
+        enter_password: '输入密码'
+        forgot_password: '忘记密码?'
+    image_preview: '图片预览'
+    close: '关闭'
+    profile: '个人资料'
+    logout: '退出登录'
+
+  activerecord:
+    controller:
+      index: '列表'
+      show: '详情'
+      edit: '编辑'
+      new: '新建'
+      dashboard: '信息总揽'
+      users: "用户"
+      admins: '管理员'
+    models:
+      user: "用户"
+      admin: '管理员'
+    attributes:
+      user:
+        name: "名称"
+        email: "邮箱"
+        password: "密码"
+        password_confirmation: "确认密码"
+        remember_me: '记住我'
+      admin:
+        full_name: '姓名'
+
+
+

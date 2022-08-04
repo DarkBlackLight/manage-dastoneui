@@ -5,9 +5,9 @@ Gem::Specification.new do |spec|
   spec.version     = Manage::Dastoneui::VERSION
   spec.authors     = ["liwuqi95"]
   spec.email       = ["wuqi.li@mail.utoronto.ca"]
-  spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of Manage::Dastoneui."
-  spec.description = "TODO: Description of Manage::Dastoneui."
+  spec.homepage    = "https://github.com/fair-gz/manage-dastoneui"
+  spec.summary = "Gem For CMS Management with CoreUI"
+  spec.description = "Gem For CMS Management with CoreUI"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -15,10 +15,10 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = spec.homepage
+  spec.metadata["changelog_uri"] = spec.homepage
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.1.6"
+  spec.add_dependency "rails", ">= 6.0.0"
 end

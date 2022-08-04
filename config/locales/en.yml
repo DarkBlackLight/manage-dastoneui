@@ -1,0 +1,20 @@
+en:
+  manage:
+    resources:
+      dict_default_message: 'Drop files here to upload'
+    sessions:
+      new:
+        login: 'Log in'
+        sign_in_to_your_account: 'Sign In To Your Account'
+        password: 'Login Password'
+        password_confirmation: 'Password Confirmation'
+        submit: 'Submit'
+        remember_me: 'Remember me'
+        enter_email: 'Enter email'
+        enter_username: 'Enter username'
+        enter_password: 'Enter password'
+        forgot_password: 'Forgot password?'
+    image_preview: 'Image Preview'
+    close: 'Close'
+    profile: 'Profile'
+    logout: 'Logout'

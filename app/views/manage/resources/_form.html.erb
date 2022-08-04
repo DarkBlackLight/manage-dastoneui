@@ -1,0 +1,28 @@
+<% sections.each do |key, value| %>
+  <% if content_for?(key) %>
+    <div class="card" id="form-card-<%= key %>">
+      <div class="card-header">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="card-title mb-0"><%= value %></h5>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <%= yield key %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+
+<% content_for :footer do %>
+  <footer class="footer text-center text-sm-start">
+    <div class="boxed-footer">
+      <button class="btn btn-link go-back"><%= (t 'manage.resources.back') %></button>
+
+      <div class="d-none d-sm-inline-block float-end">
+        <button type="button" class="btn btn-primary btn-resource"><%= (t 'manage.resources.submit') %></button>
+
+      </div>
+    </div>
+  </footer>
+<% end %>
