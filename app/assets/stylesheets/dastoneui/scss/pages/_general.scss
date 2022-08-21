@@ -111,7 +111,8 @@ code[class*="lang-html"], pre[class*="lang-html"] {
   font-family: $font-secondary;
 }
 .page-title-box {
-  padding: 16px 0;
+  //padding: 16px 0;
+  padding: 0 0 12px 0;
   .page-title {
     font-size: 17px;
     margin: 0;

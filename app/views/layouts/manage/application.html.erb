@@ -33,7 +33,7 @@
             <div class="page-title-box">
               <div class="row">
                 <div class="col">
-                  <h4 class="page-title" style="text-transform: capitalize"><%= t 'activerecord.controller.' + controller_name %></h4>
+                  <!--                  <h4 class="page-title" style="text-transform: capitalize"><%#= t 'activerecord.controller.' + controller_name %></h4>-->
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item" style="text-transform: capitalize">
                       后台管理
@@ -49,11 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <%= yield %>
-          </div>
-        </div>
+        <%= yield %>
       </div>
     </div>
   </div>
