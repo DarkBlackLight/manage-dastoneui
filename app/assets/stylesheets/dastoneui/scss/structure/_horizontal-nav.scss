@@ -33,9 +33,10 @@ File: Horizontal-nav
                 line-height: $header-height;
                 .logo-sm {
                     height: 22px;
+                    display: none;
                 }
                 .logo-lg {
-                    height: 14px;
+                    height: 32px;
                     margin-left: 2px;
                     display: $logo-dark;
                     &.logo-light{
@@ -171,7 +172,7 @@ File: Horizontal-nav
         }
         i {
             display: inline-block;
-            font-size: 15px;
+            font-size: 10px;
             margin-right: 8px;
             transition: all .1s ease;
             vertical-align: middle;
@@ -212,6 +213,10 @@ File: Horizontal-nav
             position: fixed;
             z-index: 1;
             .logo {
+                .logo-sm {
+                    height: 32px !important;
+                    display: inline-block !important;
+                }
                 .logo-lg {
                     display: none !important;
                 }
@@ -552,7 +557,8 @@ File: Horizontal-nav
             margin-right: 0;
             .logo{
                 .logo-sm {
-                    height: 32px;
+                    height: 32px !important;
+                    display: inline-block !important;
                 }
                 .logo-lg{
                     display: none;
