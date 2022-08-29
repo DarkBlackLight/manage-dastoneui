@@ -75,6 +75,33 @@ function initFormComponents() {
 
 }
 
+function initDataTable(ele) {
+    var columns = [];
+
+    ele.find('th').each(function () {
+        columns.push({
+            data: $(this).data('name')
+        })
+    });
+
+    var options = {
+        lengthChange: false,
+        language: data_table_zh,
+        serverSide: true,
+        searching: false,
+        ordering: false,
+        ajax: ele.data('url') + window.location.search,
+        columns: columns,
+    };
+
+    if (ele.data('button')) {
+        options['dom'] = 'Bfrtip';
+        options['buttons'] = ele.data('button').split(',')
+    }
+
+    ele.DataTable(options);
+}
+
 $(document).on('change', 'input[name="resource_selection"]', function () {
     if ($('input[name="resource_selection"]:checked').length > 0) {
         $('#resources-destroy-all').show();
@@ -117,6 +144,10 @@ $(document).on('click', '#resources-destroy-all', function () {
 
 $(document).ready(function () {
     initFormComponents();
+
+    $('.data-table').each(function () {
+        initDataTable($(this));
+    })
 
     var body = $('body');
     window.controller_name = body.data('controller-name');
