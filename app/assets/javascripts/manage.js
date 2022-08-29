@@ -26,6 +26,8 @@
 // 警报弹窗
 //= require dastoneui/sweet-alert2/sweetalert2.min
 
+//= require dastoneui/datatables/dataTables.zh.cn
+
 // <!-- Required datatable js -->
 // //= require dastoneui/datatables/jquery.dataTables.min
 // //= require dastoneui/datatables/dataTables.bootstrap5.min
