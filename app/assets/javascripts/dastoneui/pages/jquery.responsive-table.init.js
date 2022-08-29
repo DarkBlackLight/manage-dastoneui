@@ -7,7 +7,7 @@
 
 $(function () {
     let table_th = $('.table-responsive #tech-companies thead th')
-    table_th.slice(1, table_th.length - 1).attr('data-priority', 1)
+    table_th.attr('data-priority', 1)
 
     $('.table-responsive').responsiveTable({
         addDisplayAllBtn: 'btn btn-secondary',
