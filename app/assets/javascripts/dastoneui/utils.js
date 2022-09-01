@@ -77,11 +77,37 @@ function initFormComponents() {
 
 function initDataTable(ele) {
     var columns = [];
+    var columnDefs = [];
 
     ele.find('th').each(function () {
         columns.push({
             data: $(this).data('name')
         })
+        if ($(this).data('name') === 'can') {
+            columnDefs.push({
+                targets: -1,
+                data: 'can',
+                render: function (data, type, row, meta) {
+                    if (data.update && data.destroy) {
+                        return `
+<a class="btn btn-info btn-sm" href="${data.show}">查看</a>
+<a class="btn btn-warning btn-sm" href="${data.update}">编辑</a>
+<a data-confirm="您确定要删除此项记录吗?" class="btn btn-danger btn-sm" rel="nofollow" data-method="delete" href="${data.destroy}">删除</a>`
+                    } else if (data.update) {
+                        return `
+<a class="btn btn-info btn-sm" href="${data.show}">查看</a>
+<a class="btn btn-warning btn-sm" href="${data.update}">编辑</a>`;
+                    } else if (data.destroy) {
+                        return `
+<a class="btn btn-info btn-sm" href="${data.show}">查看</a>
+<a data-confirm="您确定要删除此项记录吗?" class="btn btn-danger btn-sm" rel="nofollow" data-method="delete" href="${data.destroy}">删除</a>`;
+                    } else {
+                        return `
+<a class="btn btn-info btn-sm" href="${data.show}">查看</a>`;
+                    }
+                },
+            })
+        }
     });
 
     var options = {
@@ -92,6 +118,7 @@ function initDataTable(ele) {
         ordering: false,
         ajax: ele.data('url') + window.location.search,
         columns: columns,
+        columnDefs: columnDefs
     };
 
     if (ele.data('button')) {
