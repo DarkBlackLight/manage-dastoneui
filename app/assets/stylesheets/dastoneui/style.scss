@@ -9,14 +9,14 @@
 @import "datatables/buttons.bootstrap5.min";
 
 //白色
-//@import "bootstrap";
-//@import "scss/bootstrap";
-//@import "scss/app";
+@import "bootstrap";
+@import "scss/bootstrap";
+@import "scss/app";
 
 //黑色
-@import "bootstrap-dark";
-@import "scss/bootstrap-dark";
-@import "scss/app-dark";
+//@import "bootstrap-dark";
+//@import "scss/bootstrap-dark";
+//@import "scss/app-dark";
 @import "scss/icons";
 
 /*调整*/
@@ -33,7 +33,7 @@
     height: 2.094rem;
 
     .select2-selection__rendered {
-      line-height: 28px;
+      line-height: 32px;
     }
 
     .select2-selection__arrow {
