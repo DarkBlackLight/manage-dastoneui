@@ -25,9 +25,19 @@
   padding: 0.375rem 0.75rem !important;
 }
 
+.daterangepicker {
+  .drp-calendar .available:hover {
+    background-color: rgba(23, 97, 253, 0.1) !important;
+  }
+
+  .drp-calendar.left {
+    padding: 8px;
+  }
+}
+
 .select2-container--default {
   height: 2.094rem;
-  z-index: 99999;
+  z-index: 2000;
 
   .select2-selection--single {
     height: 2.094rem;
@@ -48,6 +58,10 @@
     .select2-selection__choice {
       margin-top: 0.3em;
     }
+  }
+
+  .select2-results__option--highlighted[aria-selected] {
+    background-color: rgba(42, 118, 244, 0.5);
   }
 }
 

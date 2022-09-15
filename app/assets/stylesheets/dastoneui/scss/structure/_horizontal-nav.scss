@@ -499,7 +499,7 @@ File: Horizontal-nav
         padding-bottom: 0;
         overflow: auto;
         background-color: $card-bg;
-        z-index: 1000;
+        z-index: 3000;
         border-bottom: 1px solid $border;
     }
     #navigation.open {
