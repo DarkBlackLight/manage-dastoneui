@@ -35,6 +35,10 @@
   }
 }
 
+.modal.select2-container--default {
+  z-index: 2000;
+}
+
 .select2-container--default {
   height: 2.094rem;
 
@@ -73,11 +77,5 @@
     text-align: center;
     margin: 0;
     line-height: 150px;
-  }
-}
-
-.modal {
-  /deep/ .select2-container--default {
-    z-index: 1070;
   }
 }
