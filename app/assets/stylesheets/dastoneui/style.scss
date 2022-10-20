@@ -76,8 +76,8 @@
   }
 }
 
-.modal {
-  .select2-container--default {
+.modal. {
+  /deep/ .select2-container--default {
     z-index: 1070;
   }
 }
