@@ -60,14 +60,16 @@
   <% end %>
 <% end %>
 
-<%= render 'layouts/manage/modal', modal_id: 'image-preview-modal', title: (t 'manage.image_preview'), size: 'lg' do %>
-  <%= tag.div class: 'modal-body' do %>
-    <img src="" width="100%"/>
+<div class="model-box">
+  <%= render 'layouts/manage/modal', modal_id: 'image-preview-modal', title: (t 'manage.image_preview'), size: 'lg' do %>
+    <%= tag.div class: 'modal-body' do %>
+      <img src="" width="100%"/>
+    <% end %>
+    <%= tag.div class: 'modal-footer' do %>
+      <%= button_tag (t 'manage.close'), class: "btn btn-secondary", type: "button", "data-bs-dismiss": "modal" %>
+    <% end %>
   <% end %>
-  <%= tag.div class: 'modal-footer' do %>
-    <%= button_tag (t 'manage.close'), class: "btn btn-secondary", type: "button", "data-bs-dismiss": "modal" %>
-  <% end %>
-<% end %>
+</div>
 
 <% if flash[:success] %>
   <script>
