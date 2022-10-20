@@ -64,6 +64,10 @@
   }
 }
 
+.select2-container--open {
+  z-index: 2000;
+}
+
 .dropzone {
   border: 2px dashed $border_2;
   background: $input-bg;
