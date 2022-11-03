@@ -24,6 +24,9 @@
           <%= image_tag "/#{@config[:scope]}/images/avatar.png", class: 'rounded-circle thumb-sm' %>
         </a>
         <div class="dropdown-menu dropdown-menu-end">
+          <%= yield :header_dropdown if content_for?(:header_dropdown) %>
+
+          <div class="dropdown-divider mb-0"></div>
           <%= link_to url_for({ controller: :sessions, action: :destroy }), method: :delete, class: "dropdown-item" do %>
             <i data-feather="power" class="align-self-center icon-xs icon-dual me-1"></i>
             <%= t 'manage.logout' %>
