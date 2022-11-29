@@ -9,14 +9,15 @@
 @import "datatables/buttons.bootstrap5.min";
 
 //白色
-//@import "bootstrap";
-//@import "scss/bootstrap";
-//@import "scss/app";
+@import "bootstrap";
+@import "scss/bootstrap";
+@import "scss/app";
 
 //黑色
-@import "bootstrap-dark";
-@import "scss/bootstrap-dark";
-@import "scss/app-dark";
+//@import "bootstrap-dark";
+//@import "scss/bootstrap-dark";
+//@import "scss/app-dark";
+
 @import "scss/icons";
 
 /*调整*/
@@ -78,4 +79,16 @@
     margin: 0;
     line-height: 150px;
   }
+}
+
+.page-wrapper {
+  width: 100% !important;
+}
+
+.page-content {
+  padding: 0 52px 52px 52px !important;
+}
+
+. boxed-footer {
+  width: 100% !important;
 }
