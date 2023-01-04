@@ -48,6 +48,7 @@ function initFormComponents() {
         autoApply: true,
         autoUpdateInput: false,
         showDropdowns: true,
+        minYear: 2000,
         locale: {
             format: "YYYY-MM-DD",
             separator: ' ~ ',
@@ -70,6 +71,7 @@ function initFormComponents() {
         showDropdowns: true,
         timePicker: true,
         timePicker24Hour: true,
+        minYear: 2000,
         locale: {
             format: "YYYY-MM-DD HH:mm:ss",
             separator: ' ~ ',
